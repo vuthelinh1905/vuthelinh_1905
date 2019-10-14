@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #parent{
+            background: #FFFF00;
+            width: 550px;
+            height: 550px;
+            margin-top: 150px;
+            margin-left: 150px;
+            position: relative;
+        }
+        #child{
+            background: #3b8020;
+            width: 250px;
+            height: 250px;
+            top: 100px;
+            left: 100px;
+            position:absolute;
+        ;
+        }
+    </style>
+</head>
+<body>
+
+<div id="parent">
+    <div id="child">
+        Div con
+    </div>
+</div>
+
+
+<pre>
+    mình muốn thẻ con có position:absolute lấy vị trí của thẻ mẹ làm gốc tọa độ
+    thì phải đặt thẻ mẹ có position:relative thì thẻ con absolute sẽ đi theo tọa độ
+    của thẻ mẹ relative mà ko quan tâm đến tọa độ của thẻ body màn hình
+</pre>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <style type="text/css">
+        #a{
+            background: #FFFF00;
+            width: 250px;
+            height: 250px;
+        }
+        #b{
+            background: #FF0000;
+            width: 250px;
+            height: 250px;
+            position:absolute;
+            top:150px ;
+            left: 150px;
+            /*top:0px ;
+            left:0px;*/
+        }
+    </style>
+</head>
+<body>
+<pre>
+    position:absolute;
+    lấy vị trí ban đầu của trang web mà di chuyển .
+    - khác với margin-top và margin-left sẽ tạo ra 1 khoảng không gian xung quanh cái thẻ
+    html được chọn
+    - thì top và left đi kèm với position:absolute sẽ biến trình duyệt trở thành 1 hệ
+    tọa độ
+    - khi sử dụng position khác static có thể là position:absolute hay position:relative
+    thì thẻ html đó sẽ bị phá vỡ khỏi flow hiển thị mặc định
+    flow hiển thị mặc định chịu ảnh hưởng của thuộc tính display và float nếu có
+
+</pre>
+
+<div id="a">BOX 1</div>
+<div id="b">BOX 2</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #demo1,#demo2,#demo3{
+            color: navy;
+            background: #FFFF00;
+            display: inline;
+        }
+        #v1,#v2,#v3{
+            background: #FF0000;
+            text-decoration: none;
+        }
+        #a1,#a2{
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+
+<pre>
+    có 2 nhóm thẻ html theo kiểu hiển thị
+    1 - thẻ theo nhóm hiển thị block
+    1 số thẻ thuộc nhóm block : div , p , section , header , foooter , h1 -> h6
+    2 - nhóm thẻ theo nhóm hiển thị inline
+    1 số thẻ thuộc nhóm inline : a, span , img
+
+    *** chú ý 1 :
+    thẻ div là thẻ tiêu biểu của nhóm block ( 1 khối )
+    thẻ a là thẻ tiêu biểu của nhóm inline ( 1 hàng )
+
+    *** chú ý 2 :
+    block : luôn chiếm toàn bộ độ rộng sẵn có của thẻ cha
+    nếu thẻ block nằm trực tiếp trong thẻ body thì nó sẽ chiếm toàn bộ độ rộng của màn hình
+    nếu thẻ block nằm trong 1 thẻ khác thẻ body thì nó sẽ chiến toàn bộ độ rộng của thẻ
+    cha chứa nó
+    bất kể là nội dung của nó rất ngắn
+    đặc điểm thứ 2 của thẻ block là nó luôn xuất hiện tren 1 hàng mới
+
+
+    *** chú ý 3 :
+    trái với đặc điểm cua thẻ thuộc nhóm block
+    thì thẻ inline chỉ chiếm độ rộng tương đượng với nội dung bên trong nó
+    thứ 2 là thẻ inline sẽ nằm trên 1 hàng cùng nhau nếu độ rộng
+    màn hình vẫn còn đủ để chứa nó
+</pre>
+
+<div id="demo1">Noi dung the div</div>
+<div id="demo2">Noi dung the div</div>
+<div id="demo3">Noi dung the div</div>
+
+<span id="a1">Noi dung the span</span>
+<span id="a2">Noi dung the span</span>
+
+<a id="v1" href="#">Noi dung the a</a>
+<a id="v2" href="#">Noi dung the a</a>
+<a id="v3" href="#">Noi dung the a</a>
+
+</body>
+</html>
