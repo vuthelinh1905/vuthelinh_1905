@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #a{
+            color: #FFFF00;
+        }
+        p{
+            color: red;
+            font-size: 30px;
+        }
+        .d{
+            color: purple;
+        }
+        #c{
+            color: blue;
+        }
+        p{
+            color: aquamarine !important;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+<pre>
+
+        Thứ tự ưu tiên mã code css
+    khi mà không phục thuộc vào thứ tự dòng css
+    1 - Inline style ( sử dụng thuộc tính html style="" trong thẻ html )
+    2 - Selector #id
+    3 - Selector .class
+    4 - Selector thẻ html ( div,p,section ... )
+    !important có thể phá vỡ sự ưu tiên của mã css theo quy tắc ở bên trên
+</pre>
+
+<p id="a" class="d" style="color: green !important;">Thẻ p số 1</p>
+<p id="b" class="d">Thẻ p số 2</p>
+<p id="c" class="d">Thẻ p số 3</p>
+
+</body>
+</html>
