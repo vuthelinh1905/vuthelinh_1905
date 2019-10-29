@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<pre>
+        Các class cho cột hỗ trợ responsive trong bootstrap
+        Loại 1 :
+        .col- (extra small devices - screen width less than 576px)
+        Áp dụng cho màn hình nhỏ như mobile với độ rộng nhở hơn 576px
+        ví dụ : .col-1 , .col-2 , .col-3
+        Loại 2 :
+        .col-sm- (small devices - screen width equal to or greater than 576px)
+        Áp dụng màn hình nhỏ như samsung tab hay ipad với độ rộng màn hình bằng hoặc lớn
+        hơn 576px
+        Loại 3 :
+        .col-md- (medium devices - screen width equal to or greater than 768px)
+        Áp dụng màn hình trung binh như laptop có độ rộng băng hay lớn hơn 768px
+        Loại 4 :
+        .col-lg- (large devices - screen width equal to or greater than 992px)
+        Áp dụng cho màn hình lớn như PC với độ rộng bằng hay lớn hơn 992px
+        Loại 5
+        .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+        Áp dụng cho mà hình siêu lớn như tivi hay máy chiếu ... với độ rộng màn hình bằng
+        1200px hay lớn 1200px
+    </pre>
+
+
+<h1>Áp dụng cho mobile thực hành class có tiêu đề .col-</h1>
+<pre>
+    Lưới bootstrap hỗ trọ vẽ cột
+    =>Muốn sử dụng giao diện cột 1 cột bằng  nhau : 12/số cột = 12 => .col-12
+    =>Muốn sử dụng giao diện cột 2 cột bằng  nhau : 12/số cột = 6 => .col-6
+    =>Muốn sử dụng giao diện cột 3 cột bằng  nhau : 12/số cột = 4 => .col-4
+    =>Muốn sử dụng giao diện cột 4 cột bằng  nhau : 12/số cột = 3 => .col-3
+    =>Muốn sử dụng giao diện cột 5 cột bằng  nhau : không được
+    ...
+    =>Muốn sử dụng giao diện cột 12 cột bằng  nhau : 12/số cột =12 => .col-12
+</pre>
+<div class="container">
+    <h2>Giao diện 1 cột</h2>
+    <div class="row">
+
+        <div class="col-12">
+            <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+        </div>
+    </div>
+    <h2>Giao diện 2 cột</h2>
+    <div class="row">
+
+        <div class="col-6">
+            <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+        </div>
+        <div class="col-6">
+            <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+        </div>
+    </div>
+
+    <h2>Giao diện 3 cột</h2>
+    <div class="row">
+
+        <div class="col-4">
+            <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+        </div>
+        <div class="col-4">
+            <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+        </div>
+        <div class="col-4">
+            <p>Sed porttitor lectus nibh. Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
