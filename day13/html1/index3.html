@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="info"></div>
+<div id="info2"></div>
+<div id="info3"></div>
+
+
+<script type="text/javascript">
+    class sinhvien {
+        constructor (ten, quequan , diemtong , toan , ly , hoa ){
+            this.ten = ten  ;
+            this.quequan=quequan;
+            this.diemtong = diemtong;
+            this.toan = toan;
+            this.ly = ly;
+            this.hoa = hoa;
+        }
+        thongtin(){
+            return "Tôi tên là : "+this.ten+"Tôi quê quán tại : "+ this.quequan;
+        }
+        tinhdiem(){
+            this.diemtong=(toan+ly+hoa)/3;
+        }
+        xeploai(){
+            if(this.diemtong>5){
+                this.xeploai="qua";
+            }else {
+                this.xeploai="trượt";
+            }
+        }
+    }
+
+    var Linh = new sinhvien("Linh","NB",27,9,9,9);
+    document.getElementById("info").innerText=Linh.thongtin();
+    Linh.thongtin();
+    Linh.xeploai();
+    document.getElementById("info2").innerText="Xep loai : " + Linh.xeploai;
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="demo"></div>
+<div id="demo2"></div>
+<div id="getTimeCurrent"></div>
+<div id="getTimeTet"></div>
+
+<script type="text/javascript">
+    var l = new Date();
+    document.getElementById("demo").innerText= l;
+
+    var tet = new Date(2020,0,1,0,0,0,0);
+    document.getElementById("demo2").innerText=tet;
+
+    // lấy ra thời gian theo đơn vị mili giây
+    document.getElementById("getTimeCurrent").innerText= "Time hien tai " + l.getDate();
+    document.getElementById("getTimeTet").innerText="Time tet 2020 " + tet.getTime();
+
+
+</script>
+</body>
+</html>

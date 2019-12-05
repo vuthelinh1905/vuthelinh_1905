@@ -1,0 +1,1 @@
+alert("Nhung js tu ben ngoai");

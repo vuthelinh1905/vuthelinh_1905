@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+        Static method ( phương thức tĩnh )
+        phương thức tĩnh là những phương thức có thể gọi mà không cần
+        khởi tạo đối tượng
+        - chú ý khi khởi tạo đối tượng bạn sẽ không thể gọi các
+        method static trong class của đối tượng đó
+        đặt từ khóa static trước tên method mà bạn muốn tạo
+
+
+    </pre>
+
+<div id="demo2"></div>
+
+<script type="text/javascript" >
+
+    class car{
+        constructor(brand,price , model , speed){
+            this.brand=brand;
+            this.price=price;
+            this.model=model;
+            this.speed=speed;
+        }
+        thongtin(){
+            return "tên xe : "+this.brand;
+        }
+        static tocdo(speed){
+            /**
+             * Chú ý bên trong method tĩnh
+             * khi muốn gọi đến method hay thuộc tính khác
+             * bạn không được dùng từ khóa this
+             * mà phải dùng tên class gọi đến thuộc tính
+             * hay phương thức
+             * ví dụ bên dưới dùng từ khóa Car.speed
+             */
+            car.speed= speed;
+            return "Tốc độ của xe là " +  car.speed;
+        }
+    }
+
+    document.getElementById("demo2").innerText=car.tocdo("200km/h");
+
+
+</script>
+</body>
+</html>

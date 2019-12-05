@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button onclick="showInfo('Do')">Mau do</button>
+<button onclick="showInfo('Xanh')">Mau xanh</button>
+<button onclick="showInfo('Tim')">Mau tim</button>
+
+<p id="result"></p>
+
+<script type="text/javascript">
+    function showInfo(color) {
+        if (color === 'đỏ') {
+            document.getElementById('result').innerText = "Bạn chọn màu đỏ";
+            document.getElementById('result').style.color = "red";
+        } else if (color === 'đen') {
+            document.getElementById('result').innerText = "Bạn chọn màu xanh";
+            document.getElementById('result').style.color = "green";
+        } else if (color === 'vàng') {
+            document.getElementById('result').innerText = "Bạn chọn màu tím";
+            document.getElementById('result').style.color = "yellow";
+        } else {
+            // không làm gì
+        }
+    }
+
+</script>
+
+
+
+</body>
+</html>
